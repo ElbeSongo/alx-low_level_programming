@@ -11,6 +11,6 @@ int main(void)
 	char person[] = "Dora Korpar";
 	char date[] = "2015-10-19";
 
-	printf("and that piece of art is useful\" - %s, $s\n", person, date);
+	printf("and that piece of art is useful\" - %s, %s\n", person, date);
 	return (1);
 }
