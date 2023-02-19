@@ -19,7 +19,7 @@ int main(void)
 	}
 
 	alphah = 'A';
-	while (alphah <= 'z')
+	while (alphah <= 'Z')
 	{
 		putchar(alphah);
 		alphah++;
