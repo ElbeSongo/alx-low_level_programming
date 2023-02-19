@@ -8,14 +8,14 @@
 
 int main(void)
 {
-	int alpha;
+	int alpha1;
 	int alphah;
 
-	alphal = 'a';
-	while (alphal <= 'z')
+	alpha1 = 'a';
+	while (alpha1 <= 'z')
 	{
-		putchar(alphal);
-		alphal++;
+		putchar(alpha1);
+		alpha1++;
 	}
 
 	alphah = 'A';
