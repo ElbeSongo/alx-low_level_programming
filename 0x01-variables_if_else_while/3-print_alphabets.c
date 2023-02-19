@@ -11,11 +11,11 @@ int main(void)
 	int alpha;
 	int alphah;
 
-	alpha1 = 'a';
-	while (alpha1 <= 'z')
+	alphal = 'a';
+	while (alphal <= 'z')
 	{
-		putchar(alpha1);
-		alpha1++;
+		putchar(alphal);
+		alphal++;
 	}
 
 	alphah = 'A';
