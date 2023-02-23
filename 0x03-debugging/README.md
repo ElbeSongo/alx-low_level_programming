@@ -1,2 +1,1 @@
-0x03. C - Debugging
-This is a readme file
+0x03 - Debugging
