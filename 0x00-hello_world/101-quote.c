@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - this is the main function
@@ -12,7 +12,7 @@ int main(void)
 
 	while (string[a] != '\0')
 	{
-		write(2, &string[a], 1);
+		putchar(string[a]);
 		a++;
 	}
 
