@@ -1,2 +1,9 @@
 #!/bin/bash
-gcc -E $CFILE -o c
+# Save C file is provided
+if [ -z "$CFILE" ]; then
+	echo "Usage: $0 <C_FILE>"
+	exit 1
+fi
+
+# Run preprocessor and save output in 'c' file
+gcc -E "$CFILE" -o c
