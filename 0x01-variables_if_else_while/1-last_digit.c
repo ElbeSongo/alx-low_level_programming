@@ -25,7 +25,7 @@ int main(void)
 	}
 	else if (lastDigit == 0)
 	{
-		printf("0 and is 0\n");
+		printf("0\n");
 	}
 	else
 	{
@@ -33,4 +33,4 @@ int main(void)
 	}
 
 	return (0);
-}
+i}
