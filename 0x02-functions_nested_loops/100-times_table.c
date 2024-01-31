@@ -7,26 +7,42 @@
  */
 void print_times_table(int n)
 {
-	if (n < 0 || n > 15)
-		return;
+	int x = 0;
+	int y = 0;
+	int multiple;
 
-	for (int i = 0; i <= n; i++)
+	while ((y <= n) && (n >= 0 && n < 15))
 	{
-		for (int j = 0; j <= n; j++)
+		x = 0;
+		while (x <= n)
 		{
-			int result = i * j;
+			multiple = y * x;
 
-			if (j != 0)
+			if (x > 0 && y >= 0 && multiple < 10)
 			{
-				printf(", ");
-				if (result < 100)
-					printf(" ");
-				if (result < 10)
-					printf(" ");
+				_putchar(' ');
+				_putchar(' ');
+			}
+			else if (multiple >= 10 && multiple < 100)
+			{
+				_putchar(' ');
+				_putchar(multiple / 10 + 48);
 			}
 
-			printf("%d", result);
+			else if (multiple >= 100)
+			{
+				_putchar(multiple / 100 + 48);
+				_putchar(multiple / 10 % 10 + 48);
+			}
+			_putchar(multiple % 10 + 48);
+			if (x != n)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			x++;
 		}
-		printf("\n");
+		_putchar('\n');
+		y++;
 	}
 }
