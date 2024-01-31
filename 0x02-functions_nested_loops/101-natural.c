@@ -8,15 +8,17 @@
  */
 int main(void)
 {
+	int x = 0;
 	int sum = 0;
 
-	for (int i = 0; i < 1024; i++)
+	while (x < 1024)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum += i;
+		if (x % 3 == 0 || x % 5 == 0)
+		{
+			sum += x;
+		}
+		x++;
 	}
-
-	printf("Sum of multiples of 3 or 5 below 1024: %d\n" sum);
-
+	printf("%d\n", sum);
 	return (0);
 }
