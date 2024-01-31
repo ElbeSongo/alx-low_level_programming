@@ -5,22 +5,22 @@
  */
 void print-alphabet_x10(void)
 {
-	int i = 0;
-	int alpha;
+	int alpha = 97;
+	int num = 48;
 
-	while (i < 10)
+	while (num <= 57)
 	{
 		alpha = 97;
-
 		while (alpha <= 122)
 		{
 			_putchar(alpha);
 			alpha++;
 		}
-
+		num++;
 		_putchar('\n');
-		i++;
 	}
 }
+
+
 
 
