@@ -7,20 +7,25 @@
  */
 int main(void)
 {
-	unsigned long a = 1, b = 2, fib;
+	long double val1 = 1;
+	long double val2 = 2;
+	long double fib;
+	int x = 3;
 
-	printf("%lu %lu", a, b);
-
-	for (int i = 2; i < 98; i++)
+	printf("%0.Lf, %0.Lf, ", val1, val2);
+	while (x <= 98)
 	{
-		fib = a + b;
-		printf(" %lu", fib);
+		printf("%0.Lf", val2);
 
-		a = b;
-		b = fib;
+		if (x != 98)
+		{
+			printf(", ");
+		}
+		else
+		{
+			printf("\n");
+		}
+		x++;
 	}
-
-	printf("\n");
-
 	return (0);
 }
