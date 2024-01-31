@@ -12,7 +12,7 @@ int main(void)
 	long double fib;
 	int x = 3;
 
-	printf("%0.Lf, %0.Lf, ", val1, val2);
+	printf("%Lf, %Lf, ", val1, val2);
 
 	while (x <= 98)
 	{
@@ -20,7 +20,7 @@ int main(void)
 		val1 = val2;
 		val2 = fib;
 
-		printf("%0.Lf", val2);
+		printf("%Lf", val2);
 
 		if (x != 98)
 		{
