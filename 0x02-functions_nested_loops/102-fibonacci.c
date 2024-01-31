@@ -13,14 +13,13 @@ int main(void)
 	long int fib;
 	int x = 3;
 
-
-	printf("%1d, %1d, ", val1, val2);
+	printf("%ld, %ld, ", val1, val2);
 
 	while (x <= 50)
 	{
 		fib = val1 + val2;
 
-		printf("%1d", fib);
+		printf("%ld", fib);
 
 		if (x != 50)
 		{
