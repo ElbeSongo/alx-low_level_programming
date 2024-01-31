@@ -8,19 +8,28 @@
  */
 int main(void)
 {
-	long int a = 1, b = 2, next;
+	long int val1 = 1;
+	long int val2 = 2;
+	long int fib;
+	int x = 3;
 
-	printf("%1d, %1d", a, b);
 
-	for (int i = 2; i < 50; i++)
+	printf("%1d, %1d, ", val1, val2);
+
+	while (x <= 50)
 	{
-		next = a + b;
-		printf(", %1d", next);
-		a = b;
-		b = next;
+		fib = val1 + val2;
+
+		printf("%1d", fib);
+
+		if (x != 50)
+		{
+			printf(", ");
+		}
+		val1 = val2;
+		val2 = fib;
+		x++;
 	}
-
-	printf("\n");
-
+	putchar('\n');
 	return (0);
 }
